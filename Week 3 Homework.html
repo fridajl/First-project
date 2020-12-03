@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Happy Donut Bakery</title>
+    <style>
+      body {
+        width: 420px;
+        text-align: center;
+        margin: 0px auto;
+        background-color: rgb(96, 125, 139,0.2);
+        font-family: helvetica;
+        color:#212121;
+      }
+      img {
+        display: block;
+        margin: 0px auto;
+      }
+      div {
+        background: linear-gradient(to bottom right, #f2d1a8, #ffc77f);
+        border: 2px groove rgb(0, 0, 0, 0.5);
+        border-radius: 15px;
+      }
+      button {
+        display: block;
+        text-transform: uppercase;
+        margin: 10px auto;
+        padding: 10px;
+        width: 160px;
+        color: #F57C00;
+        background: rgb(209, 217, 222);
+        border-radius: 20px;
+        border-color: #f2d1a8;
+        line-height: 13px;
+        box-shadow: rgb(235, 235, 235, 0.2) 1px 1px 1px 1px;
+      }
+      button:hover {
+        transition:ease-in-out 0.1s;
+        background: #FF9800;
+        cursor: pointer;
+        color:black;
+      }
+      h1 {
+        border: 1px solid #f4f1d6;
+        border-radius: 9px;
+        color: #F57C00;
+        margin: 15px 20px;
+        padding: 4px 4px;
+        background-color: #f2d1a8;
+        line-height: 30px;
+      }
+      h2{ 
+        color:#f4f1d6;
+        font-size: 20px;
+        text-transform: uppercase;
+        
+      }
+
+      a {
+        font-size: 13px;
+      color:#F57C00;
+     text-decoration: none;
+     } 
+    span{
+    font-weight: 600;
+    font-family:tahoma; 
+    font-size: 15px;
+    }
+
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>The Happy Donut Bakery</h1>
+      <h2>Dirty Vegan Goodies</h2>
+
+      <hr />
+      <img
+        src="https://img1.wsimg.com/isteam/ip/8978ea46-4fe8-4b9b-81c4-ff8d1065fb4e/56DD5885-7949-4074-A3C0-C9CDD604AF7E-476B4566-.JPG/:/cr=t:30.92%25,l:0%25,w:100%25,h:38.17%25/rs=w:900,h:450,cg:true"
+        width="350px;"
+      />
+      <hr />
+
+      <h3>100% Vegan & 100% Delicious</h3>
+      <p>
+        Proudly vegan, but not exclusively FOR vegans. With no "planty" taste,
+        we're disrupting the <span>“eww that’s vegan”</span> mindset. Don't believe us? </span>Too
+        bad, you'll just have to try us.
+      </p>
+      <h3>Other Goodies</h3>
+      <p>
+        <em>'Donuts'</em> in our name, but so is 'Bakery'. For you that's great news,
+        everyone deserves a dirty vegan bakery in their lives, don't they?
+      </p>
+      <a href= https://thehappydonut.co.uk target="_blank"> Visit the Happy Donut Bakery</a>
+
+      <button>Try Happy Donuts</button>
+      <script>
+          function signUp(){
+         let name= prompt("What is your name?");
+         let age= prompt("How old are you?");
+         if (age<18){alert(`Don't worry ${name}, you can enjoy Happy Donuts even if you are ${age}!😉 We'll be in touch shortly, smile😊!`)} 
+         else{
+         alert(`Hi ${name}, we'll be in touch! Meanwhile, don't forget to smile!🍩`);
+          }
+          }
+          let tryButton= document.querySelector("button");
+          tryButton.addEventListener("click", signUp);
+
+      </script>
+    </div>
+  </body>
+</html>
